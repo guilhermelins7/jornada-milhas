@@ -11,15 +11,30 @@ import { MatButtonModule } from '@angular/material/button';
 import { BannerComponent } from './shared/banner/banner.component';
 import { ContainerComponent } from './shared/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CardComponent } from './shared/card/card.component';
+import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
+import { MatCardModule } from '@angular/material/card';
+import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoimento.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, BannerComponent, ContainerComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent,
+    ContainerComponent,
+    HomeComponent,
+    CardComponent,
+    CardBuscaComponent,
+    CardDepoimentoComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
