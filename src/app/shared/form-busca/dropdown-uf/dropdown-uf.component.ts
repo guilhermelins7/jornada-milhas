@@ -8,4 +8,6 @@ import { Component, Input } from '@angular/core';
 export class DropdownUfComponent {
   @Input() label!: string;
   @Input() iconePrefixo!: string;
+
+  filteredOptions: [] = [];
 }
