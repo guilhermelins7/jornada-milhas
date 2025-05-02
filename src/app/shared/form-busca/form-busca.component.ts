@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ModalComponent } from '../modal/modal.component';
 import { FormBuscaService } from 'src/app/core/services/form-busca.service';
 
 @Component({
@@ -9,13 +7,5 @@ import { FormBuscaService } from 'src/app/core/services/form-busca.service';
   styleUrls: ['./form-busca.component.scss'],
 })
 export class FormBuscaComponent {
-  constructor(
-    public dialog: MatDialog,
-    public formBuscaService: FormBuscaService
-  ) {}
-
-  openDialog() {
-    // Abrindo o modal:
-    this.dialog.open(ModalComponent);
-  }
+  constructor(public formBuscaService: FormBuscaService) {}
 }
