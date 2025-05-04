@@ -12,4 +12,12 @@ export class FormBuscaComponent {
   buscar() {
     console.log(this.formBuscaService.formBusca.value);
   }
+
+  inverterOrigemDestino() {
+    const origem = this.formBuscaService.obterControle('origem').value;
+    const destino = this.formBuscaService.obterControle('destino').value;
+
+    this.formBuscaService.obterControle('origem').setValue(destino);
+    this.formBuscaService.obterControle('destino').setValue(origem);
+  }
 }
